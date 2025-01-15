@@ -1,0 +1,57 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.0"
+coreKtx = "1.13.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+room = "2.6.1"
+ksp-plugin = "1.9.10-1.0.13"
+gms-google-services = "4.4.1"
+firebase-bom = "32.8.1"
+firebase-analytics = "21.6.2"
+firebase-auth = "22.3.1"
+annotation = "1.7.1"
+lifecycleLivedataKtx = "2.7.0"
+lifecycleViewmodelKtx = "2.7.0"
+play-services-auth = "21.1.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+
+# Room
+androidx-room = { group = "androidx.room", name = "room-runtime", version.ref = "room"}
+androidx-roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room"}
+
+# Firebase
+firebaseBom = {group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom"}
+firebaseAnalytics = {group = "com.google.firebase", name = "firebase-analytics-ktx", version.ref = "firebase-analytics"}
+firebaseAuth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebase-auth" }
+playServicesAuth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "play-services-auth"}
+
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+googleDevtoolsKsp = { id = "com.google.devtools.ksp", version.ref = "ksp-plugin" }
+googleServices = { id = "com.google.gms.google-services", version.ref = "gms-google-services" }
+
+
+
+
+

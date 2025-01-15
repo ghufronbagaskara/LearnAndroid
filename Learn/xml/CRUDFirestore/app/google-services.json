@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528450506987",
+    "project_id": "crudfirestore-422c9",
+    "storage_bucket": "crudfirestore-422c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528450506987:android:963205c747626fbb34aeae",
+        "android_client_info": {
+          "package_name": "com.example.crudfirestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiMmbLDU2Gkbh2NxZHgXoaz3xOR47ulIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

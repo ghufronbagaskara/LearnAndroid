@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Submission Android Sederhana</string>
+    <string name="recipe_name">Nama Makanan</string>
+    <string name="description">Deskripsi dan Resep</string>
+    <string name="about">Acccount</string>
+    <string name="eat_mate">EatMate</string>
+    <string name="about_name">Ghufron Bagaskara</string>
+    <string name="about_email">ghufronbagaskara@email.go</string>
+
+    <string-array name="data_name">
+        <item>Nasi Goreng</item>
+        <item>Rendang</item>
+        <item>Soto Ayam</item>
+        <item>Sate Ayam</item>
+        <item>Gado-Gado</item>
+        <item>Bakso</item>
+        <item>Ayam Goreng</item>
+        <item>Gudeg</item>
+        <item>Pempek</item>
+        <item>Tahu Gejrot</item>
+        <item>Lumpia Semarang</item>
+        <item>Rawon</item>
+        <item>Opor Ayam</item>
+        <item>Nasi Uduk</item>
+        <item>Bubur Ayam</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Nasi goreng adalah makanan khas Indonesia yang dibuat dengan menggoreng nasi yang sudah matang, dicampur dengan kecap manis, telur, ayam, atau udang, dan bumbu lainnya.\nResep:\n1. Nasi\n2. Bawang putih\n3. Kecap manis\n4. Telur\n5. Ayam\nCara membuat:\n1. Tumis bawang putih hingga harum.\n2. Masukkan telur dan buat orak-arik.\n3. Tambahkan nasi dan aduk rata.\n4. Masukkan kecap manis dan ayam, lalu aduk hingga merata.\n5. Sajikan selagi hangat.</item>
+        <item>Rendang adalah makanan khas Sumatera Barat yang terkenal dengan daging sapi yang dimasak dalam santan dan bumbu khas, dimasak hingga bumbunya meresap dan daging menjadi empuk.\nResep:\n1. Daging sapi\n2. Santan\n3. Serai\n4. Lengkuas\n5. Cabai\nCara membuat:\n1. Tumis bumbu halus, serai, dan lengkuas hingga harum.\n2. Masukkan daging sapi dan aduk hingga merata.\n3. Tambahkan santan dan masak hingga mendidih.\n4. Masak dengan api kecil hingga daging empuk dan kuah mengental.\n5. Sajikan dengan nasi hangat.</item>
+        <item>Soto Ayam adalah sup ayam khas Indonesia yang terdiri dari kuah bening atau kuning, ayam suwir, telur rebus, bihun, dan bahan pelengkap seperti daun bawang dan bawang goreng.\nResep:\n1. Ayam\n2. Kunyit\n3. Serai\n4. Bihun\n5. Telur\n6. Daun bawang\nCara membuat:\n1. Rebus ayam hingga matang, suwir dagingnya.\n2. Tumis bumbu halus dengan kunyit dan serai hingga harum.\n3. Tambahkan air kaldu ayam, masak hingga mendidih.\n4. Sajikan dengan bihun, telur, daun bawang, dan ayam suwir.</item>
+        <item>Sate Ayam adalah makanan yang terbuat dari potongan daging ayam yang ditusuk dengan tusukan bambu, dipanggang di atas bara api, dan disajikan dengan saus kacang..\nResep:\n1. Ayam\n2. Kacang tanah\n3. Kecap manis\n4. Bawang putih\n5. Cabai\nCara membuat:\n1. Tusuk potongan ayam pada tusukan sate.\n2. Panggang di atas bara api hingga matang.\n3. Buat saus kacang dengan menumbuk kacang tanah, bawang putih, dan cabai, lalu campur dengan kecap manis.\n4. Sajikan sate dengan saus kacang.</item>
+        <item>Gado-Gado adalah salad sayuran khas Indonesia yang disajikan dengan bumbu kacang, telur rebus, tahu, tempe, dan kerupuk.\nResep:\n1. Bayam\n2. Tauge\n3. Tahu\n4. Tempe\n5. Kacang tanah\n6. Kerupuk\nCara membuat:\n1. Rebus sayuran hingga matang.\n2. Goreng tahu dan tempe hingga garing.\n3. Buat saus kacang dengan menumbuk kacang tanah, bawang putih, dan cabai.\n4. Sajikan sayuran dengan tahu, tempe, saus kacang, dan kerupuk.</item>
+        <item>Bakso adalah bola daging yang terbuat dari daging sapi, disajikan dalam kuah kaldu yang gurih, dilengkapi dengan mi, tahu, dan sayuran.\nResep:\n1. Daging sapi\n2. Tepung sagu\n3. Bawang putih\n4. Garam\n5. Kaldu sapi\nCara membuat:\n1. Haluskan daging sapi dan campur dengan tepung sagu serta bawang putih.\n2. Bentuk adonan menjadi bulatan-bulatan bakso.\n3. Rebus bakso hingga mengapung.\n4. Sajikan bakso dalam kuah kaldu yang sudah dibumbui.</item>
+        <item>Ayam Goreng adalah hidangan ayam yang digoreng setelah dilumuri dengan bumbu khas. Biasanya disajikan dengan sambal dan lalapan.\nResep:\n1. Ayam\n2. Kunyit\n3. Bawang putih\n4. Garam\n5. Minyak goreng\nCara membuat:\n1. Lumuri ayam dengan bumbu yang sudah dihaluskan (kunyit, bawang putih, garam).\n2. Goreng ayam hingga matang dan renyah.\n3. Sajikan dengan sambal dan lalapan.</item>
+        <item>Gudeg adalah makanan khas Yogyakarta yang terbuat dari nangka muda yang dimasak dengan santan, disajikan dengan telur, ayam, dan sambal krecek.\nResep:\n1. Nangka muda\n2. Santan\n3. Telur\n4. Ayam\n5. Krecek\nCara membuat:\n1. Rebus nangka muda hingga empuk.\n2. Masak nangka dengan santan dan bumbu rempah.\n3. Tambahkan ayam dan telur yang sudah direbus.\n4. Sajikan dengan krecek pedas.</item>
+        <item>Pempek adalah makanan khas Palembang yang terbuat dari ikan dan tepung tapioka, disajikan dengan kuah cuka yang pedas, manis, dan asam.\nResep:\n1. Ikan tenggiri\n2. Tepung tapioka\n3. Bawang putih\n4. Cuka\n5. Cabai\nCara membuat:\n1. Campur ikan tenggiri dengan tepung tapioka dan bawang putih.\n2. Bentuk adonan menjadi pempek sesuai selera.\n3. Rebus pempek hingga matang.\n4. Sajikan dengan kuah cuka pedas.</item>
+        <item>Tahu Gejrot adalah makanan khas Cirebon yang terdiri dari tahu goreng yang dipotong kecil-kecil dan disajikan dengan kuah pedas manis dari gula merah dan cabai.\nResep:\n1. Tahu\n2. Gula merah\n3. Cabai\n4. Bawang merah\n5. Asam jawa\nCara membuat:\n1. Goreng tahu hingga matang, potong kecil-kecil.\n2. Buat kuah dengan mencampur gula merah, cabai, bawang merah, dan asam jawa.\n3. Sajikan tahu dengan kuah pedas manis.</item>
+        <item>Lumpia Semarang adalah makanan khas Semarang yang berupa kulit lumpia diisi dengan rebung, ayam, atau udang, kemudian digoreng atau dikukus dan disajikan dengan saus kental.\nResep:\n1. Kulit lumpia\n2. Rebung\n3. Ayam\n4. Telur\n5. Bawang putih\n6. Kecap\nCara membuat:\n1. Tumis rebung dan ayam dengan bawang putih hingga matang.\n2. Masukkan telur dan kecap, aduk rata.\n3. Isi kulit lumpia dengan campuran rebung dan ayam, gulung.\n4. Goreng lumpia hingga garing.</item>
+        <item>Rawon adalah sup daging khas Jawa Timur yang berwarna hitam karena menggunakan kluwak, dengan rasa yang khas dan disajikan dengan nasi dan tauge.\nResep:\n1. Daging sapi\n2. Kluwak\n3. Bawang merah\n4. Serai\n5. Daun jeruk\nCara membuat:\n1. Tumis bumbu halus (kluwak, bawang merah, serai) hingga harum.\n2. Masukkan daging sapi dan aduk hingga merata.\n3. Tambahkan air dan masak hingga daging empuk.\n4. Sajikan dengan nasi dan tauge.</item>
+        <item>Opor Ayam adalah makanan khas Indonesia yang terbuat dari ayam yang dimasak dengan kuah santan dan rempah-rempah, biasanya disajikan saat perayaan hari besar.\nResep:\n1. Ayam\n2. Santan\n3. Lengkuas\n4. Bawang putih\n5. Kemiri\nCara membuat:\n1. Tumis bumbu halus (lengkuas, bawang putih, kemiri) hingga harum.\n2. Masukkan ayam dan aduk hingga berubah warna.\n3. Tambahkan santan dan masak hingga ayam empuk.\n4. Sajikan dengan nasi putih atau ketupat.</item>
+        <item>Nasi Uduk adalah nasi yang dimasak dengan santan dan daun pandan, disajikan dengan lauk pauk seperti telur, ayam goreng, dan sambal kacang.\nResep:\n1. Nasi\n2. Santan\n3. Daun pandan\n4. Serai\n5. Bawang goreng\nCara membuat:\n1. Masak nasi dengan santan, daun pandan, dan serai hingga matang.\n2. Sajikan dengan bawang goreng dan lauk seperti telur atau ayam goreng.</item>
+        <item>Bubur Ayam adalah bubur nasi yang disajikan dengan suwiran ayam, cakwe, telur, dan kuah kaldu, biasanya ditambah dengan kecap manis dan sambal.\nResep:\n1. Beras\n2. Ayam\n3. Bawang putih\n4. Cakwe\n5. Telur rebus\nCara membuat:\n1. Rebus beras hingga menjadi bubur.\n2. Suwir ayam yang sudah direbus.\n3. Sajikan bubur dengan suwiran ayam, cakwe, dan telur rebus.\n4. Tambahkan kecap manis dan sambal sesuai selera.</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>https://upload.wikimedia.org/wikipedia/commons/e/e5/Korean_cuisine-Kimchi_bokkeumbap.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/1920px-Rendang_daging_sapi_asli_Padang.JPG</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Soto_ayam.JPG/1280px-Soto_ayam.JPG</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/a/ad/Sate_Ponorogo.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Gado_gado.jpg/1280px-Gado_gado.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/2/28/Bakso_mi_bihun.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ayam_goreng_in_Jakarta.JPG/1280px-Ayam_goreng_in_Jakarta.JPG</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Nasi_Gudeg.jpg/1280px-Nasi_Gudeg.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pempekraden_kapal_selam_dan_kulit_ikan.jpg/1280px-Pempekraden_kapal_selam_dan_kulit_ikan.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Cirebon_Tahu_Gejrot.jpg/1920px-Cirebon_Tahu_Gejrot.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Loenpia_Semarang_with_sauce.JPG/220px-Loenpia_Semarang_with_sauce.JPG</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rawon_Setan.jpg/1280px-Rawon_Setan.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Opor_Ayam_Telur_Pindang.JPG/1280px-Opor_Ayam_Telur_Pindang.JPG</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Nasi_uduk_netherlands.jpg/200px-Nasi_uduk_netherlands.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bubur_ayam_chicken_porridge.JPG/1280px-Bubur_ayam_chicken_porridge.JPG</item>
+    </string-array>
+    
+
+
+</resources>
