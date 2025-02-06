@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         @StringRes
         private val TAB_TITLES = intArrayOf(
             R.string.tab_text_1,
-            R.string.tab_text_2
+            R.string.tab_text_2,
+            R.string.tab_text_3
         )
     }
 
@@ -30,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = sectionsPagerAdapter
 
         val tabs: TabLayout = findViewById(R.id.tabs)
-        TabLayoutMediator(tabs, viewPager) {tab, positon ->
-            tab.text = resources.getString(TAB_TITLES[positon])
+        TabLayoutMediator(tabs, viewPager) {tab, position ->
+            tab.text = resources.getString(TAB_TITLES[position])
         }.attach()
 
         supportActionBar?.elevation = 0f
