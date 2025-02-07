@@ -1,6 +1,5 @@
 package com.example.myquote
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,39 +8,43 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.myquote.databinding.ActivityMainBinding
+import com.example.myquote.MainActivity.Companion
+import com.example.myquote.databinding.ActivityListQuoteBinding
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
+import org.json.JSONArray
 import org.json.JSONObject
-import kotlin.math.log
 
-class MainActivity : AppCompatActivity() {
+class ListQuoteActivity : AppCompatActivity() {
 
-    companion object {
-        private  val TAG = MainActivity::class.java.simpleName
+    companion object{
+        private val TAG = ListQuoteActivity::class.java.simpleName
     }
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityListQuoteBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityListQuoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val layoutManager = LinearLayoutManager(this)
+        binding.listQuotes.layoutManager = layoutManager
 
-        getRandomQuote()
+        val itemDecorations = DividerItemDecoration(this, layoutManager.orientation)
+        binding.listQuotes.addItemDecoration(itemDecorations)
 
-        binding.btnAllQutes.setOnClickListener{
-            startActivity(Intent(this@MainActivity, ListQuoteActivity::class.java))
-        }
+        getListQuote()
+
     }
 
-    private fun getRandomQuote(){
+    private fun getListQuote(){
         binding.progressBar.visibility = View.VISIBLE
         val client = AsyncHttpClient()
-        val url = "https://quote-api.dicoding.dev/random"
+        val url = "https://quote-api.dicoding.dev/list"
         client.get(url, object : AsyncHttpResponseHandler(){
             override fun onSuccess(
                 statusCode: Int,
@@ -50,19 +53,25 @@ class MainActivity : AppCompatActivity() {
             ) {
                 binding.progressBar.visibility = View.INVISIBLE
 
+                val listQuote = ArrayList<String>()
+
                 val result = String(responseBody)
                 Log.d(TAG, result)
 
                 try {
-                    val responseObject = JSONObject(result)
+                    val jsonArray = JSONArray(result)
 
-                    val quote = responseObject.getString("en")
-                    val author = responseObject.getString("author")
+                    for (i in 0 until jsonArray.length()){
+                        val jsonObject = jsonArray.getJSONObject(i)
+                        val quote = jsonObject.getString("en")
+                        val author = jsonObject.getString("author")
+                        listQuote.add("\n$quote\n - $author\n")
+                    }
 
-                    binding.tvQuote.text = quote
-                    binding.tvAuthor.text = author
+                    val adapter = QuoteAdapter(listQuote)
+                    binding.listQuotes.adapter = adapter
                 } catch (e: Exception){
-                    Toast.makeText(this@MainActivity,e.message, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ListQuoteActivity, e.message, Toast.LENGTH_SHORT).show()
                     e.printStackTrace()
                 }
             }
@@ -81,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                     404 -> "$statusCode : Not Found"
                     else -> "$statusCode : ${error?.message}"
                 }
-                Toast.makeText(this@MainActivity, errorMessage, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ListQuoteActivity, errorMessage, Toast.LENGTH_SHORT).show()
             }
 
         })
