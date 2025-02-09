@@ -10,6 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import androidx.fragment.app.commit
 import com.example.intermediateandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,10 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         if (fragment !is HomeFragment){
             Log.d("MyFlexFragment", "Fragment Name: " + HomeFragment::class.java.simpleName)
-            fragmentManager
-                .beginTransaction()
-                .add(R.id.frame_container, homeFragment, HomeFragment::class.java.simpleName)
-                .commit()
+            fragmentManager.commit {
+                add(R.id.frame_container, homeFragment, HomeFragment::class.java.simpleName)
+
+            }
         }
 
     }
