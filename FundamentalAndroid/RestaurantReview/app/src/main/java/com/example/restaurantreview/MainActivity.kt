@@ -14,6 +14,7 @@ import com.example.restaurantreview.data.response.Restaurant
 import com.example.restaurantreview.databinding.ActivityMainBinding
 import com.example.restaurantreview.ui.MainViewModel
 import com.example.restaurantreview.ui.ReviewAdapter
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,6 +50,16 @@ class MainActivity : AppCompatActivity() {
             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(view.windowToken, 0)
         }
+
+        mainViewModel.snackbarText.observe(this, {
+            it.getContentIfNotHandled()?.let { snackBarText ->
+                Snackbar.make(
+                    window.decorView.rootView,
+                    snackBarText,
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            }
+        })
 
 
     }
